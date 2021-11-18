@@ -177,7 +177,8 @@ shorthand property (encurtamento)
         margin: 0 auto;
 
 Listas
-    unordered list: <ul></ul>
+    unordered list: <
+    ></ul>
     ordered list: <ol></ol>
     list item: <li></li>
 
@@ -242,3 +243,136 @@ LINKS
     
     Outra página do próprio site:
         <p>Acesse <a href="index.html">nossa loja</a>.</p>
+
+SELETORES
+    Seletores mais específicos:
+            tag-pai tag-filha
+            class=""
+            id=""
+        
+        tag-pai tag-filha
+        Ex:
+            figure img{
+                width: 300px;
+            }
+
+        class=""
+        Ex:
+            HTML:
+            <img class="figura1">
+            
+            CSS:
+            .figura1 {
+                width: 300px;
+            }
+        (feito pra CSS e JavaScript)
+        
+        id=""
+        Ex:
+            HTML:
+            <img id="figura1">
+            
+            CSS:
+            #figura1 {
+                width: 300px;
+            }
+        (para estilização, usar class e não id)
+
+    Prioridade dos seletores:
+        tag: 1
+        class: 10
+        id: 100
+    Ex:
+        p { 
+            color: blue;
+        }
+        .paragrafo { 
+            color: red;
+        }
+        #paragrafo-rosa { 
+        color: pink;
+        }
+        - No exemplo acima (tag, class, id), a cor prioritária é pink (id = 100)
+
+    - dois seletores somam valor
+    Ex:
+        body p {
+            color: pink;
+        }
+        - tag+tag = 1+1 = 2
+
+    - em seletores iguais o último tem prioridade
+
+    - trabalhar sempre com baixa escificidade (prioridade), para q não seja impossível sobrescrever valores
+
+HERANÇA
+    Elemento filho herdar característia de estilo de elemento superior. Características podem ou não passar aos descendentes
+
+    Ex:
+        HTML:
+        <body>
+            <p>
+            <figcaption>
+        CSS:
+        body {
+            font-family: sans-serif;
+        }
+        - font aplicada à body, p e figcaption
+
+ELEMENTO SEMÂNTICO:
+    passam informação com significado específico para o conteúdo interpretado pelo navegador
+        Ex:
+            <section>, <article>, <address>
+    -úteis para leitores não visuais (acessibilidade/Google)
+    -tags de uso genérico para estilização: <div>(divisão em blocos), <span>(texto sem quebrar linha)
+    <dl> = Definition List
+    <dd> = Detalhes da Descrição
+
+
+INHERIT
+    valor "inherit" indica ao elemento q deve usar o msm valor do elemento pai
+    Ex:
+        HTML
+        <div>
+            <img>
+        </div>
+        CSS
+        div {
+            width: 30px;
+            height: 30px;
+        }
+        img {
+            width: inherit;
+            height: inherit;
+        }
+    -usar inherit quando a propriedade não são aplicadas em cascata (herança)
+
+DESACOPLAMENTO COM CLASSES
+    tag+class
+    Ex:
+        <h3 class="subtitulo">TITULO H3</h3>
+        .subtitulo {
+            blablabla
+        }
+
+PADRÕES CSS (BEMCSS)
+    bloco__elemento--modificador
+    bloco = representa uma divisão de conteúdo cuja sua existência já tenha um sentido por si só
+    elemento = representa uma parte semântica do bloco 
+    modificador = uma sinalização de comportamento ou estilização
+    DIVISÕES:    
+        double snake__case
+        double kebab--case
+    Kebab-case para HTML e CSS 
+    camelCase para JavaScript.
+    display: 
+        display: block 
+        display: inline
+    Ex:
+        HTML:
+        <p>Um parágrafo que é block</p>
+        <a>Um link que é inline</a>
+        CSS:
+        p {background-color: blue;}
+        a {background-color: red;}
+
