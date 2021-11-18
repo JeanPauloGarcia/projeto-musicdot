@@ -320,13 +320,24 @@ HERANÇA
         - font aplicada à body, p e figcaption
 
 ELEMENTO SEMÂNTICO:
+    Tags: 
+        h1, p, figure, 
+        section, article, addres
+        para representar com precisão os elementos
+
     passam informação com significado específico para o conteúdo interpretado pelo navegador
         Ex:
             <section>, <article>, <address>
     -úteis para leitores não visuais (acessibilidade/Google)
-    -tags de uso genérico para estilização: <div>(divisão em blocos), <span>(texto sem quebrar linha)
-    <dl> = Definition List
-    <dd> = Detalhes da Descrição
+    -sites mais semânticos e estruturados ganham prioridade nas respostas de buscas
+    
+    Servem para representar e não para "exibir" (não visual)
+    Exceção:
+        -tags para facilitar estilização: 
+        <div>(divisão em blocos), 
+        <span>(texto sem quebrar linha)
+        <dl> = Definition List
+        <dd> = Detalhes da Descrição
 
 
 INHERIT
@@ -356,18 +367,26 @@ DESACOPLAMENTO COM CLASSES
         }
 
 PADRÕES CSS (BEMCSS)
-    bloco__elemento--modificador
-    bloco = representa uma divisão de conteúdo cuja sua existência já tenha um sentido por si só
-    elemento = representa uma parte semântica do bloco 
-    modificador = uma sinalização de comportamento ou estilização
+    Padronização da nomenclatura de CSS
+    BEMCSS:
+        bloco__elemento--modificador
+        bloco = representa uma divisão de conteúdo cuja sua existência já tenha um sentido por si só
+        elemento = representa uma parte semântica do bloco 
+        modificador = uma sinalização de comportamento ou estilização
     DIVISÕES:    
         double snake__case
         double kebab--case
     Kebab-case para HTML e CSS 
     camelCase para JavaScript.
     display: 
-        display: block 
-        display: inline
+        display: block (embaixo)
+            não permite elemento ao lado, mesmo com width
+        display: inline (ao lado)
+            permite elemento ao lado
+            não recebe width e height
+        display: inline-block
+            permite elemento ao lado
+            recebe propriedades de tamanho (width, height)
     Ex:
         HTML:
         <p>Um parágrafo que é block</p>
