@@ -395,3 +395,106 @@ PADRÕES CSS (BEMCSS)
         p {background-color: blue;}
         a {background-color: red;}
 
+EM REM
+    medidas baseadas em tamanho de fonte. 
+    PX: tamanho fixo
+    EM: tamanho depende da fonte do elemento pai 
+        HTML font-size: 10px
+            BODY font-size: 1.4em (=14px)
+                DIV font-size: 1.2em (=16.8)
+    REM: tamanho da fonte do <html> (body). /* facilmente escalável em responsividade */
+        HTML font-size: 10px
+                BODY font-size: 1.4em (=14px)
+                    DIV font-size: 1.2em (=12px)
+    Ex.:
+        HTML: <img src="img/foto" alt="Uma foto">
+        CSS:
+            html {font-size: 10px;}
+            div {font-size: 20px;}
+            img {
+                height: 10rem; /* A altura será de 100px (10x10) */
+                width: 10em; /* A largura será de 200px (10x20) */
+                }
+        
+    medida relativa: %
+    Ex.:
+        HTML: <div><img src="img/flor.png" alt="Foto de uma flor"></div>
+        CSS:    
+            div {width: 400px;} 
+            img {width: 100%;}
+
+    "Estas unidades de medida são ideais para quando o site precisa ser exibido em diferentes tamanhos de telas, onde em cada tamanho de tela a fonte deve ser exibida em escalas de tamanhos diferentes e proporcionais entre si."
+
+RESPONSIVIDADE (Web Design Responsivo)
+    Fazer a experiência do usuário em diversos dispositivos mais atraente (usando @media)
+    Web única (One Web)
+    -CSS3
+    -Detectar se é dispositivo móvel através do User-Agent do navegador       
+    -Boa prática: incluir link da versão normal do site (função visualizar como desktop)
+    -Media types: diferenciar suporte de regras de layout
+    CSS2
+        Declarados ao invocar arquivo CSS:
+            HTML:
+            <link rel="stylesheet" href="site.css" media="screen">
+            <link rel="stylesheet" href="print.css" media="print">
+            <link rel="stylesheet" href="handheld.css" media="handheld">
+        Declarados no CSS:
+            CSS:
+            @media screen {
+                body {
+                    background-color: blue;
+                    color: white;
+                }
+            }
+            @media print {
+                body {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        Media types:
+            screen: visualização normal (Desktop)
+            print: regras de impressão
+            handheld: para dispositivos móveis
+                modelo antigo, não mais usado
+            os celulares modernos tbm usam media type screen
+    CSS3
+    regras do CSS vinculadas a propriedades do dispositivo: 
+        -Tamanho da tela, 
+        -orientação (landscape ou portrait) e 
+        -resolução em dpi
+    Ex.:
+        HTML:     
+        <link rel="stylesheet" href="base.css" media="screen">
+        <link rel="stylesheet" href="mobile.css" media="(max-width: 480px)">
+        CSS:
+        @media screen {
+            body {
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                font-size: 12px;
+            }
+        }
+    Problemática: celulares com telas maiores q a escolhida
+    device-width: representa um número em pixels que o fabricante do aparelho considera como mais próximo da sensação que o usuário tem ao visualizar a tela
+    Ex.:
+        iPhones: device-width 370px
+    Viewport: tamanho da tela visível
+    Solução: 
+        <meta name="viewport" content="width=370">
+        <meta name="viewport" content="width=device-width">
+    Requisitos do design responsivo:
+        -layout fluído usando medidas flexíveis, como porcentagens;
+        -media queries para ajustes de design;
+        -uso de imagens flexíveis.
+    mobile-first: mais recomendado
+        usando media queries min-width
+        abordagem mais simples e evolutiva, devido a área limitada
+        mudar p/ desktop: readaptar layout
+    desktop-first: começa pelo ambiente mais livre e vai tentando cortar coisas quando chega no mobile
+    
+LIVROS PAGOS
+    https://www.casadocodigo.com.br/
