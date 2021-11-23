@@ -234,15 +234,19 @@ LINKS
     abrir em outra aba:
         <a href="https://www.caelum.com.br" target="_blank"> 
 
-    bookmark (demarcação):
-        <p>Mais informações <a href="#info">aqui</a>.</p>
+    bookmark (demarcação) - link para um trecho da mesma página:
         <h2 id="info">Mais informações sobre o assunto:</h2>
+    
+    chamar bookmark/marcação:
+        <p>Mais informações <a href="#info">aqui</a>.</p>
 
     bookmark em outra página:
         <a href="http://www.caelum.com.br/curso/wd43/#contato">
     
     Outra página do próprio site:
         <p>Acesse <a href="index.html">nossa loja</a>.</p>
+
+
 
 SELETORES
     Seletores mais específicos:
@@ -498,3 +502,127 @@ RESPONSIVIDADE (Web Design Responsivo)
     
 LIVROS PAGOS
     https://www.casadocodigo.com.br/
+
+PROCESSO DE DESENVOLVIMENTO
+    Passar info doprojeto
+    analisar e validar info
+    publico alvo
+        tom linguistico
+        visual
+        intensidade e tipo de inovações
+    1ª etapa (análise):
+        -UX Design (Experiência do usuário)
+            Cursos de Design de Interação, Experiência do Usuário e Usabilidade
+        -Designer
+        -Conteúder
+        Levantamento das informações:
+            -quantidade
+            -conteúdo
+            -localização
+            -estilização
+    
+    Resultado (definições sobre):
+        -Navegação (mapa do site)
+        -Esboço das visões (layout)
+        -Visões parciais (diálogos de alerta e confirmações da aplicação)
+        -Estilo fica genérico (fontes, cores e imagens neutras)
+        -Informações escritas
+        esboços = wireframes 
+    2ª etapa (á partir dos wireframes)
+        Adicionar:
+            -cores
+            -fontes
+            -fundos
+            -bordas
+            -características visuais
+        Mesma equipe mas sem a pessoa de conte´udo
+        Ferramentas:
+            -Photoshop
+            -Illustrator
+            -Figma
+            ...
+    Resultado:    
+        Layout = imagens estáticas com visual pronto
+    3ª etapa (front-end):
+        Objetivo: telas visíveis e utilizáveis por navegador
+        Tecnologia: HTML, CSS, JavaScript
+        Análise do layout
+            Definir:
+                Áreas de página
+                    cabeçalho
+                    rodapé
+                    conteúdo principal
+                HTML
+                    header
+                    main
+                    footer
+            Planejamento de fora para dentro
+                1º ver header, main, footer
+                Apronfudar em 1
+                    header
+                        logo
+                        3 links
+                Aprofundar nas outras
+                ...
+ESTRUTURA
+    PRINCIPAL
+        html
+        header
+        main
+        footer
+    CABEÇALHO
+        nav
+        ul
+        li
+
+CSS RESET   
+    definição de valores básicos no CSS para sobrescrever o estilo padrão do navegador
+    ESTILOS:
+        HTML5 Boilerplate
+            Um pouco complexo
+            https://html5boilerplate.com/
+        YUI3 CSS Reset
+            Reset: Muda tudo para valores padrão
+            Base: margens e dimensões de elementos padronizados
+            Font: tipologia com visual consistente, incluindo dispositivos móveis
+        Eric Meyer CSS Reset  
+            http://meyerweb.com/eric/tools/css/reset/
+        Existem outros
+    FONTES EXTERNAS
+        Google Fonts
+            https://fonts.google.com/
+            link
+            Ex.: 
+                <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        @import
+            direto no CSS:
+            @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+            body {font-family: 'Roboto', sans-serif;}
+        @font-face
+            @font-face {
+            font-family: minhaFonte;
+            src: url(fonts/minha-fonte-customizada.woff);
+            }
+            body {font-family: 'minhaFonte', sans-serif;}
+        Verificar direitos de uso
+MODULARIZAR COMPONENTES
+    Usar um estilo de CSS para todas as páginas
+            (tipos
+            cor
+            tamanho
+            componentes)
+        seções repetidas ou não em outras páginas do site
+        Vantagens:
+            poder escrever HTML com as classes
+            importação de só um arquivo CSS padrão
+        Desvantagem:
+            Arquivo CSS grande causa efeito na performance
+            Difícil encontrar o seletor
+    Usar um estilo para cada componente
+        Vantagens:
+            Só importa os componentes necessários para cada página
+        Desvantagens:
+            Importar um CSS diferente para cada componente
+FRAMEWORK       
+    Facilitador
+
