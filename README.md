@@ -626,3 +626,52 @@ MODULARIZAR COMPONENTES
 FRAMEWORK       
     Facilitador
 
+ENHANCEMENT (melhoria/aprimoramento)
+    Condições, opções, limitações e restrições
+        Tela
+        Mouse, teclado   
+        Navegador
+        Velocidades de Conexões 
+        Pessoas com Deficiências (cegueira, miopia, visão embaçada; incapacidade de usar um mouse, controle motor com limitações; audição: surdez)
+        Ônibus/Escritório
+    Testar em todas as condições
+    Usar fluxo de desenvolvimento que inclua a maior parte das situações:
+        Usar analogia da caixa de fósforo/Caixa de sapato
+        Conteúdo
+            Qual tipo
+            Onde
+            Quanto em cada lugar
+            Como será agrupado
+        TESTE
+            -revisão de conteúdo, ortografia, etc
+        SEMÂNTICA com HTML
+            melhoria em cima do conteúdo sem nenhuma marcação
+                Ex.: tag footer
+                leitores de tela
+                    se movimenta pelas tags
+                Ex.: lê diretamente o footer
+        TESTE
+            -definir casos de uso
+                caso de uso: descrição de uma funcionalidade “especificação do comportamento da funcionalidade”
+            -testar site conforme cada leitor
+            -programas q exibem árvore de assebilidade (Ex: Dev Tools do Firefox)
+        CSS
+            3º passo (depois de conteúdo e semântica)
+            Começar pela caixa de fósforo (limitando largura e altura do viewport)
+        USER AGENT
+            identificação do tipo de dispositivo do navegador q está acessando o site
+        tags novas em navegadores desatualizadas viram <div>
+        propriedades e valores novos de CSS em navegadores desatualizados são desconsiderados
+    P.E. (Progressive Enhancement)
+        - Escolher marcação semântica
+        - Testar semântica em leitores de tela (NVDA) ou em ferramentas de acessibilidade (Dev Tolls do Firefox)
+        - Desenvolver com device-mode aberto no mobile
+        - Mobile-first
+        - Testar touch no device-mode
+
+        Device-mode:
+            aumentar área clicável
+
+        Verificar suporte do padrão de cores: https://caniuse.com/?search=rrggbbaa
+
+
