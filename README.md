@@ -673,5 +673,52 @@ ENHANCEMENT (melhoria/aprimoramento)
             aumentar área clicável
 
         Verificar suporte do padrão de cores: https://caniuse.com/?search=rrggbbaa
+DISPLAY FLEX
+    manipular posição de elementos
+        display:
+            inline, block, inline-block
+        margin
+        text-align
+    display: flex; (flexível)
+        elemento torna-se flex container
+        Flex Container
+            permite manipular elementos filhos
+            todos filhos de elemento flex automaticamente ficam lado a lado como se fosse display inline
+    JUSTIFY-CONTENT (propriedade)
+        ajusta horizontalmente os filhos do flex container:
+        flex-start (valor)
+            valor padrão, lado a lado à esquerda
+        flex-end
+            lado a lado à direita
+        center
+            lado a lado no meio
+        space-between
+            1º à esquerda e último á direita, o restante distribuídos
+        space-around
+            distribuído com espaço em volta (o espaço de elementos próximos é somado, portanto o 1º e o último tem menos espaçamento nas suas laterais)
+        space-evenly
+            corrige o problema acima, espaçamento igual em ambos os lados
+    ALIGN-ITEMS
+        ajusta verticalmente os elementos filhos:
+        stretch
+            valor padrão, se esticam proporcionalmente na vertical
+        flex-start
+            alinhas no topo do flex container
+        flex-end
+            alinhados com a base
+        center
+            alinhas com o meio
+        baseline
+            alinhados com a base do conteúdo textual de cada um deles
+    FLEX-WRAP (propriedade)
+        "quebra de linha" dos elementos em linha (inline)
+        nowrap (valor)
+            valor padrão, elementos lado a lado, msm q não haja espaço horizontal
+        wrap
+            elemento q não cabem na lateral vão para a linha debaixo
+        wrap-reverse
+            elemento q não cabem na lateral vão para a linha de cima
+
+
 
 

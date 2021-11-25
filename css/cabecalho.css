@@ -8,6 +8,7 @@
     
     color: #FFF;
     background-color: #2D5377;
+
 }
 
 .cabecalho__logo {
@@ -16,6 +17,10 @@
 }
 
 .cabecalho__menu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
     background-color: #272B3A87;
 }
 
