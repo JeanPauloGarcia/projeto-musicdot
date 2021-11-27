@@ -685,7 +685,7 @@ DISPLAY FLEX
             permite manipular elementos filhos
             todos filhos de elemento flex automaticamente ficam lado a lado como se fosse display inline
     JUSTIFY-CONTENT (propriedade)
-        ajusta horizontalmente os filhos do flex container:
+        ajusta HORIZONTALMENTE os filhos do flex container:
         flex-start (valor)
             valor padrão, lado a lado à esquerda
         flex-end
@@ -699,7 +699,7 @@ DISPLAY FLEX
         space-evenly
             corrige o problema acima, espaçamento igual em ambos os lados
     ALIGN-ITEMS
-        ajusta verticalmente os elementos filhos:
+        ajusta VERTICALMENTE os elementos filhos:
         stretch
             valor padrão, se esticam proporcionalmente na vertical
         flex-start
@@ -718,7 +718,12 @@ DISPLAY FLEX
             elemento q não cabem na lateral vão para a linha debaixo
         wrap-reverse
             elemento q não cabem na lateral vão para a linha de cima
-
-
-
+FLEXBOX B
+    layouts mais declarativos com flexbox
+    
+RESPONSIVIDADE E FALLBACK
+    Browsers desatualizados
+    https://caniuse.com/
+        mostra compatibilidade de navegadores com propriedesdes CSS
+        
 
