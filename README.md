@@ -703,11 +703,11 @@ DISPLAY FLEX
         stretch
             valor padrão, se esticam proporcionalmente na vertical
         flex-start
-            alinhas no topo do flex container
+            alinhados no topo do flex container
         flex-end
             alinhados com a base
         center
-            alinhas com o meio
+            alinhados com o meio
         baseline
             alinhados com a base do conteúdo textual de cada um deles
     FLEX-WRAP (propriedade)
@@ -725,5 +725,6 @@ RESPONSIVIDADE E FALLBACK
     Browsers desatualizados
     https://caniuse.com/
         mostra compatibilidade de navegadores com propriedesdes CSS
-        
 
+    Section: função semântica
+    Div: função visual
