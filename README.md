@@ -728,3 +728,11 @@ RESPONSIVIDADE E FALLBACK
 
     Section: função semântica
     Div: função visual
+
+FORMULÁRIO
+    Semântica: deve haver um rótulo/texto explicativo para o campo de email
+    Propriedade overflow: Especifica quando o conteúdo de um elemento de nível de bloco deve ser cortado, exibido com barras de rolagem ou se transborda do elemento.
+        visible | hidden | scroll |
+        visible: conteúdo não é cortado e pode ser renderizado para fora da caixa de conteúdo.
+        hidden: conteúdo é cortado e nenhuma barra de rolagem é exibida.
+        scroll: conteúdo com barras de rolagem que são exibidas SEMPRE. Impressoras podem imprimir o conteúdo vazado.
