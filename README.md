@@ -736,3 +736,5 @@ FORMULÁRIO
         visible: conteúdo não é cortado e pode ser renderizado para fora da caixa de conteúdo.
         hidden: conteúdo é cortado e nenhuma barra de rolagem é exibida.
         scroll: conteúdo com barras de rolagem que são exibidas SEMPRE. Impressoras podem imprimir o conteúdo vazado.
+
+EXERCÍCIO: EMBARALHANDO OS ITENS DO RODAPÉ EM TELAS MAIORES COM FLEXBOX
