@@ -738,3 +738,7 @@ FORMULÁRIO
         scroll: conteúdo com barras de rolagem que são exibidas SEMPRE. Impressoras podem imprimir o conteúdo vazado.
 
 EXERCÍCIO: EMBARALHANDO OS ITENS DO RODAPÉ EM TELAS MAIORES COM FLEXBOX
+
+COMPONENTE/BLOCO: CONTAINER
+    estilo repetido
+    colocar estilo dentro de um container no css para não repetir código, chamar o container no html
