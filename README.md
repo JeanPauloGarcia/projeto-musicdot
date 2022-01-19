@@ -742,3 +742,7 @@ EXERCÍCIO: EMBARALHANDO OS ITENS DO RODAPÉ EM TELAS MAIORES COM FLEXBOX
 COMPONENTE/BLOCO: CONTAINER
     estilo repetido
     colocar estilo dentro de um container no css para não repetir código, chamar o container no html
+
+DISPLAY: grid
+    "Display: flex": bom p/ distribuição igual em direção bem definidad
+    forma bidimensional
